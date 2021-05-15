@@ -1,0 +1,22 @@
+gTTS = google text to speech package is a python library and cmd line tool to interface btw google translates text to speech API
+ USING PYTHON
+
+pip is the python package manager
+
+pip install gTTS - to install the gTTS package on windows
+
+
+CODE -- 
+from gtts import gTTS
+import os
+friend = "hey sexy, how are you?"
+language = 'en'
+
+output = gTTS(text=friend, lang=language, slow=False)
+
+output.save("output.mp3")
+
+os.system("start output.mp3")
+
+fh = file handler
+
